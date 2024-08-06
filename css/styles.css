@@ -1,0 +1,57 @@
+body {
+    padding-top: 56px; /* To avoid content hiding behind the fixed navbar */
+}
+.navbar {
+    background-color: #f4f6f8;
+}
+.custom-button {
+    color: red;
+    background-color: transparent;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.navbar a, .navbar .dropdown-toggle {
+    color: red !important;
+}
+
+.dropdown-menu a {
+    color: transparent !important;
+    
+}
+.dropdown-menu a:hover {
+    color: #a7101081;
+}
+.red-text {
+    color: red !important;
+}
+.background-section {
+    position: relative;
+    background-image: url('/images/meat_pack.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    /* height: 100vh; */
+    width: 100%;
+}
+.background-section .content {
+    position: relative;
+    z-index: 1;
+}
+.background-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.nutrient-profile {
+    margin-top: 20px;
+}
+.nutrient-profile h3 {
+    margin-top: 0;
+}
